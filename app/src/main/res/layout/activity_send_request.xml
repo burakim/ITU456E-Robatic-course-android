@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/playground"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/layout_with_border"
+        android:layout_height="180dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/buttonColor"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/departure"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/departure_spinner"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_height="40dp"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/buttonColor"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:text="@string/destination"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/destination_spinner"
+
+
+                android:layout_height="40dp"></Spinner>
+        </LinearLayout>
+
+        </LinearLayout>
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="136dp"
+        android:layout_height="44dp"
+        android:text="@string/go_bttn"
+        android:id="@+id/send_request_go_bttn"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_rectangle"/>
+</LinearLayout>
